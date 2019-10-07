@@ -1,0 +1,8 @@
+/* pages/callback/callback.wxss */
+.web-tip1 {
+  margin-top: 80rpx;
+}
+
+.tip {
+  margin-top: 80rpx;
+}

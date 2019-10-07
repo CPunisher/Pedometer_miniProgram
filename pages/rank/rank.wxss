@@ -1,0 +1,43 @@
+.table {
+  border: 1px solid darkgrey;
+  width: 80%;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 2rem;
+  align-items: center;
+}
+
+.td {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.bg-g {
+  background: #E6F3F9;
+}
+
+.th {
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 2rem;
+  align-items: center;
+  width: 100%;
+}
+
+.caption {
+  color: chocolate;
+  font-weight: bold;
+}
+
+.caption_down {
+  color: chocolate;
+  font-weight: bold;
+  margin-top: 40rpx;
+}

@@ -1,0 +1,7 @@
+<!--pages/callback/callback.wxml-->
+<view class="container">
+  <text>您可以选择以下反馈方式</text>
+  <text class="web-tip1">1.登录网站来发送反馈</text>
+  <text class="web-tip2">{{website}}</text>
+  <text class="tip">2.发送bug邮件至{{email}}</text>
+</view>

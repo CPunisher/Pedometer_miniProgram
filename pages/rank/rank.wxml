@@ -1,0 +1,82 @@
+<view class="container">
+  <view class="caption">日榜</view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">学号</view>
+      <view class="th">姓名</view>
+      <view class="th">步数</view>
+      <view class="th">路程(m)</view>
+    </view>
+
+    <block wx:for="{{listData}}" wx:key="{{stuNum}}">
+      <view wx:if="{{item.date.type == 0}}">
+        <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+        <view class="tr" wx:else>
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="caption_down">7日榜</view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">学号</view>
+      <view class="th">姓名</view>
+      <view class="th">步数</view>
+      <view class="th">路程(m)</view>
+    </view>
+
+    <block wx:for="{{listData}}" wx:key="{{stuNum}}">
+      <view wx:if="{{item.date.type == 1}}">
+        <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+        <view class="tr" wx:else>
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class="caption_down">月榜</view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">学号</view>
+      <view class="th">姓名</view>
+      <view class="th">步数</view>
+      <view class="th">路程(m)</view>
+    </view>
+
+    <block wx:for="{{listData}}" wx:key="{{stuNum}}">
+      <view wx:if="{{item.date.type == 2}}">
+        <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+        <view class="tr" wx:else>
+          <view class="td">{{item.stuNum}}</view>
+          <view class="td">{{item.name}}</view>
+          <view class="td">{{item.steps}}</view>
+          <view class="td">{{item.distance}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th">你的学号:</view>
+    </view>
+    <view class="tr bg-g">
+      <view wx:if="{{hasData}}" class="td">{{num}}</view>
+      <block wx:else>
+        <input class="td" bindinput="getInput" value="{{num}}" />
+      </block>
+    </view>
+
+    <view class="tr bg-w">
+      <view class="th">你的姓名:</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">{{name}}</view>
+    </view>
+
+    <view class="tr bg-w">
+      <view class="th">你的步数:</view>
+    </view>
+    <view class="tr bg-g">
+      <view class="td">{{steps}}</view>
+    </view>
+  </view>
+
+  <view class="buttons">
+    <button class="btn" bindtap="getSteps">刷新步数</button>
+    <button class="btn" bindtap="uploadSteps">上传步数</button>
+  </view>
+</view>
